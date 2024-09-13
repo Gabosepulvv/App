@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro de Conductores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="register-container">
+    <h1 class="title">¡Regístrate como Conductor!</h1>
+    <p class="subtitle">Completa los campos para unirte a TeLlevoApp como conductor.</p>
+
+    <div class="form-grid">
+      <div class="form-column">
+        <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input placeholder="Ingrese su nombre" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Correo Electrónico</ion-label>
+          <ion-input placeholder="Ingrese su correo" [(ngModel)]="correo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Teléfono</ion-label>
+          <ion-input placeholder="Ingrese su número de teléfono" type="tel" [(ngModel)]="telefono"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="form-column">
+        <ion-item>
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input placeholder="Ingrese su contraseña" type="password" [(ngModel)]="contrasena"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Marca del Auto</ion-label>
+          <ion-input placeholder="Ingrese la marca del auto" [(ngModel)]="marcaAuto"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Año del Auto</ion-label>
+          <ion-input placeholder="Ingrese el año del auto" type="number" [(ngModel)]="anioAuto"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <ion-item class="toggle-item">
+      <ion-label>Recordar Contraseña</ion-label>
+      <ion-toggle [(ngModel)]="recordarContrasena"></ion-toggle>
+    </ion-item>
+
+    <div class="button-container">
+      <ion-button expand="block" (click)="validarRegistro()">Iniciar Sesión</ion-button>
+    </div>
+  </div>
+</ion-content>

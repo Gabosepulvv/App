@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>TeLlevoApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="container">
+    <h1 class="title">¡Bienvenido a TeLlevoApp!</h1>
+    <p class="subtitle">Elige tu opción según tu situación para organizar tus viajes.</p>
+
+    <div class="logo-container">
+      <img src="./assets/img/&.png" alt="Marca de la Empresa" class="brand-logo">
+    </div>
+
+    <div class="button-container">
+      <ion-button fill="solid" expand="block" class="left-button" (click)="irAPerfil()">
+        Pasajero
+      </ion-button>
+      <ion-button fill="solid" expand="block" class="right-button" (click)="irARegistro()">
+        Tengo Vehículo
+      </ion-button>
+    </div>
+
+    <div class="button-text-container">
+      <p class="text-pasajero">Viajar en auto compartido</p>
+      <p class="text-conductor">Planifica y publica tu ruta para recibir nuevos pasajeros</p>
+    </div>
+  </div>
+</ion-content>

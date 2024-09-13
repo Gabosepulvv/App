@@ -1,0 +1,46 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%; 
+  margin-bottom: 20px;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #4facfe 0%, #bccc2f 100%);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.welcome-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+.coming-soon-card {
+  --background: #3a3a3a;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007aff; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
+}

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="login-container">
+    <h1 class="title">Inicia Sesión en TeLlevoApp</h1>
+    <p class="subtitle">Ingrese su nombre de usuario y contraseña para continuar.</p>
+
+    <ion-item>
+      <ion-label position="stacked">Nombre de Usuario</ion-label>
+      <ion-input placeholder="Ingrese su nombre de usuario" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input placeholder="Ingrese su contraseña" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <div class="button-container">
+      <ion-button expand="block" (click)="validarLogin()">Iniciar Sesión</ion-button>
+    </div>
+  </div>
+</ion-content>

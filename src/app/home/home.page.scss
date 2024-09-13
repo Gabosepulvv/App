@@ -1,0 +1,90 @@
+#container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #69571b;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.left-button, .right-button {
+  width: 45%;
+  height: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.left-button {
+  --background: #3a3a3a; 
+  color: rgb(255, 255, 255);
+}
+
+.right-button {
+  --background: #313131; 
+  color: #f3f3f3;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.brand-logo {
+  width: 300px;
+  height: auto;
+  animation: loopLogo 10s linear infinite; 
+}
+
+
+@keyframes loopLogo {
+  0% {
+    transform: translateX(100%); 
+  }
+  50% {
+    transform: translateX(-150%); 
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+}
+
+
+.button-text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text-pasajero,
+.text-conductor {
+  font-size: 14px;
+  color: #666; 
+  text-align: center;
+  width: 45%;
+}
+
+.text-pasajero {
+  margin-left: 5px;
+}
+
+.text-conductor {
+  margin-right: 5px;
+}

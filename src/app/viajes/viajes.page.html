@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+
+  <div class="welcome-container" *ngIf="username">
+    <div class="welcome-card">
+      <img src="./assets/img/boxeo.gif" alt="Foto de Perfil" class="profile-image">
+      <h1 class="welcome-title">¡Bienvenido, {{ username }}!</h1>
+      <p class="welcome-subtitle">Nos alegra verte aquí. Explora los viajes disponibles y comienza tu experiencia.</p>
+    </div>
+  </div>
+
+
+  <ion-card class="coming-soon-card">
+    <ion-card-header>
+      <ion-card-title>Planes de Recorridos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Próximamente verás aquí los planes de recorridos de los conductores. ¡Mantente atento para aprovechar las mejores opciones!
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
